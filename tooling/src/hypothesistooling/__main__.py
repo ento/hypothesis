@@ -465,6 +465,7 @@ for n in [25, 10, 11, 12, 13]:
 
 standard_tox_task("coverage")
 standard_tox_task("conjecture-coverage")
+standard_tox_task("daz")
 
 
 @task()
