@@ -7,7 +7,6 @@ env:
 
 on:
   push:
-    branches: [ master ]
   pull_request:
     branches: [ master ]
   workflow_dispatch:
@@ -18,39 +17,7 @@ jobs:
     strategy:
       matrix:
         task:
-          - check-whole-repo-tests
           - lint
-          - check-format
-          - check-coverage
-          - check-conjecture-coverage
-          - check-py37
-          - check-pypy37
-          - check-py38
-          - check-pypy38
-          - check-py39
-          - check-py310
-          # - check-py310-pyjion  # see notes in tox.ini
-          - check-py311
-          - check-quality
-          - lint-ruby
-          - check-ruby-tests
-          - check-rust-in-ruby-format
-          - lint-rust-in-ruby
-          - audit-rust-in-ruby
-          - check-conjecture-rust-format
-          - check-rust-tests
-          - audit-conjecture-rust
-          - lint-conjecture-rust
-          - check-nose
-          - check-pytest46
-          - check-django40
-          - check-django32
-          - check-django22
-          - check-pandas13
-          - check-pandas12
-          - check-pandas11
-          - check-pandas10
-          - check-pandas25
           - check-daz
       fail-fast: false
     steps:
