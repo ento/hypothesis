@@ -51,6 +51,7 @@ jobs:
           - check-pandas11
           - check-pandas10
           - check-pandas25
+          - check-daz
       fail-fast: false
     steps:
     - uses: actions/checkout@v2
